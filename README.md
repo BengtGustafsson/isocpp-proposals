@@ -18,9 +18,29 @@ class std::vector<T> {
 };
 ```
 
-[P2665R0 Markdown]([P2665-OverloadSelection/Published/P2665R0.md]())
+[P2665R0 Markdown](P2665-OverloadSelection/Published/P2665R0.md)
 
-[P2665R0 PDF]([isocpp-proposals/P2665-OverloadSelection/Published/P2665R0.pdf]())
+[P2665R0 PDF](P2665-OverloadSelection/Published/P2665R0.pdf)
 
-[D2665R1 Draft]([isocpp-proposals/P2665-OverloadSelection/D2665R1.md]())
+[D2665R1 Draft](P2665-OverloadSelection/D2665R1.md)
 
+## P2666 Last Use Optimization
+
+Allow the compiler to treat the last use of a variable (or parameter) as a rvalue automatically. This includes the last use of a rvalue reference parameter and by value data members in rvalue qualified member functions.
+
+A minimum requirement on code structure when the compiler must apply this rvalue conversion is included, but as of yet the exact rule is not specified.
+
+```C++
+template<typename T> void func(T&& p)
+{
+	m_vector.push_back(p);			// No std::forward is needed
+}
+```
+
+[P2666R0 Markdown](P2666-LastUseOptimization/Published/P2666R0.md)
+
+[P2666R0 PDF](P2666-LastUseOptimization/Published/P2666R0.pdf)
+
+[D2666R1 Draft](P2666-LastUseOptimization/D2666R1.md)
+
+## 
