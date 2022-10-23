@@ -1,6 +1,6 @@
 # isocpp-proposals
 
-# My own C++ proposals with text and any reference implementation
+# My C++ proposals
 
 This repository contains published proposals in separate subdirectories. Some also contains demo implementations, usually
 incomplete.
@@ -17,3 +17,10 @@ class std::vector<T> {
     void push_back(T&&);
 };
 ```
+
+[P2665R0 Markdown]([P2665-OverloadSelection/Published/P2665R0.md]())
+
+[P2665R0 PDF]([isocpp-proposals/P2665-OverloadSelection/Published/P2665R0.pdf]())
+
+[D2665R1 Draft]([isocpp-proposals/P2665-OverloadSelection/D2665R1.md]())
+
