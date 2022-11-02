@@ -5,7 +5,7 @@
 This repository contains published proposals in separate subdirectories. Some also contains demo implementations, usually
 incomplete, intended only to prove the point.
 
-In addition to these proposals I have also been quite heavily involved in the proposal for *universal template parameters* P1985 and have had discussions with the authors of the static_vector and polymorphic_value proposals regarding the applicability of P2667. I also wrote a proposal P0565 for pack indexing and constexpr for loops a number of years ago, but never followed up on it.
+In addition to these proposals I have also been quite heavily involved in the proposal for *universal template parameters* P1985 and have had discussions with the authors of the static_vector and polymorphic_value proposals regarding the applicability of P2667. I also wrote a proposal P0565 for pack indexing and constexpr for loops a number of years ago, but never followed up on it.
 
 ## P2665 Overload Selection by compiler
 
@@ -58,13 +58,14 @@ namespace std {
   namespace allocator_info {
     template<typename A> bool can_allocate = true;
     template<typename A> size_t buffer_capacity = 0;
-    template<typename A> using backing_allocator = A;
+    template<typename A> using backing_allocator_of = A;
   }
 
   template<typename T, size_t SZ, typename Backing> class buffered_allocator;
   template<typename T> class throwing_allocator;
   template<typename T> class terminating_allocator;
   template<typename T> class unchecked_allocator;
+}
 ```
 
 An alternative would be to provide different concepts and specialize vector depending on which concepts are modelled by the actual allocator type instead of relying on new traits to modify the vector implementation.
@@ -89,9 +90,9 @@ template<typename T> class vector {
 };
 ```
 
-The one written push_back function generates three signatures according to the definition of **fwd**. When writing `fwd T` the T is used as the first template parameter of fwd as for concepts.
+The one written push_back function generates three signatures according to the definition of **fwd**. When writing `fwd T` the T is used as the first template parameter of fwd as for concepts.
 
-Note that in the assignment `value` does not have to be written `forward<decltype(value)>(value)` thanks to P2666.
+Note that in the assignment `value` does not have to be written `forward<decltype(value)>(value)` thanks to P2666.
 
 [P2668R0 Markdown](P2668-RoleBasedParameterPassing/Published/P2668R0.md)
 
