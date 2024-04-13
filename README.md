@@ -24,7 +24,7 @@ class std::vector<T> {
 
 [P2665R0 PDF](P2665-OverloadSelection/Published/P2665R0.pdf)
 
-[D2665R1 Draft](P2665-OverloadSelection/D2665R1.md)
+[D2665R1 Draft](D2665R1.md)
 
 ## P2666 Last Use Optimization
 
@@ -43,7 +43,7 @@ template<typename T> void func(T&& p)
 
 [P2666R0 PDF](P2666-LastUseOptimization/Published/P2666R0.pdf)
 
-[D2666R1 Draft](P2666-LastUseOptimization/D2666R1.md)
+[D2666R1 Draft](D2666R1.md)
 
 ## P2667 Vector Allocator for SBO
 
@@ -74,7 +74,7 @@ An alternative would be to provide different concepts and specialize vector depe
 
 [P2667R0 PDF](P2667-VectorAllocatorForSBO/Published/P2667R0.pdf)
 
-[D2667R1 Draft](P2667-VectorAllocatorForSBO/D2667R1.md)
+[D2667R1 Draft](D2667R1.md)
 
 ## P2668 Role Based Parameter Passing
 
@@ -98,7 +98,7 @@ Note that in the assignment `value` does not have to be written `forward<decltyp
 
 [P2668R0 PDF](P2668-RoleBasedParameterPassing/Published/P2668R0.pdf)
 
-[D2668R1 Draft](P2668-RoleBasedParameterPassing/D2668R1.md)
+[D2668R1 Draft](D2668R1.md)
 
 ## P2669 Deprecate Kind Change
 
@@ -112,6 +112,10 @@ It would also make a get member function for tuple and variant more palatable as
 
 [P2669R0 PDF](P2669-DeprecateKindChange/Published/P2669R0.pdf)
 
-[D2669R1 Draft](P2669-DeprecateKindChange/D2669R1.md)
+[D2669R1 Draft](D2669R1.md)
 
-## 
+## P3183 Contract testing support
+
+This proposal contains a few magic functions which can run only pre and post conditions of a function with a set of parameters. This is primarily useful to implement unit tests for these conditions, which is otherwise tricky as the program terminates if a condition fails.
+
+[D3183R0 Draft](D3183R0.md)
