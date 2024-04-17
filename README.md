@@ -118,4 +118,8 @@ It would also make a get member function for tuple and variant more palatable as
 
 This proposal contains a few magic functions which can run only pre and post conditions of a function with a set of parameters. This is primarily useful to implement unit tests for these conditions, which is otherwise tricky as the program terminates if a condition fails.
 
-[D3183R0 Draft](D3183R0.md)
+[P3183R0 Markdown](P3183-ContractTestingSupport/Published/P3183R0.md)
+
+[P3183R0 PDF](P3183-ContractTestingSupport/Published/P3183R0.pdf)
+
+[D3183R1 Draft](D3183R1.md)
