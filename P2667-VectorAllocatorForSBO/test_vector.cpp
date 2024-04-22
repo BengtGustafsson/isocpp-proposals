@@ -1,4 +1,14 @@
 
+template <typename T, size_t N>
+constexpr size_t array_size(T(&)[N]) {
+    return N;
+}
+
+void check(int const (&param)[3]) {
+    int local[] = { 1, 2, 3 };
+    constexpr auto s0 = array_size(local); // ok
+    constexpr auto s1 = array_size(param); // error
+}
 
 #include "experimental_vector.h"
 
