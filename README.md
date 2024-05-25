@@ -122,4 +122,33 @@ This proposal contains a few magic functions which can run only pre and post con
 
 [P3183R0 PDF](P3183-ContractTestingSupport/Published/P3183R0.pdf)
 
-[D3183R1 Draft](D3183R1.md)
+The R1 update introduces a third function to test post conditions of void-returning functions, adds support for testing contracts of constructors and destructors and makes the functions constexpr.
+
+[P3183R1 Markdown](P3183-ContractTestingSupport/Published/P3183R1.md)
+
+[P3183R1 PDF](P3183-ContractTestingSupport/Published/P3183R1.pdf)
+
+[D3183R2 Draft](D3183R2.md)
+
+## P3298 Implicit user-defined conversion functions as operator.()
+
+By tagging user-defined conversion functions with an implicit specifier the conversion rules change to match
+that its class inherited the unreferenced return type of the implicit user-defined conversion function. This is
+another way to formulate operator.().
+
+[P3183R0 Markdown](P3298-ImplicitConversionFunctions/Published/P3298.md)
+
+[P3183R0 PDF](P3298-ImplicitConversionFunctions/Published/P3298.pdf)
+
+[D3183R1 Draft](D3298R1.md)
+
+## P3312 Overload Set Types
+
+This proposal defines a type for each overload set of more than one function. Such overload-set-types are created
+when a placeholder type is deduced from the name of an overloaded function.
+
+[P3312R0 Markdown](P3312-OverloadSetTypes/Published/P3312R0.md)
+
+[P3312R0 PDF](P3312-OverloadSetTypes/Published/P3312R0.pdf)
+
+[D3312R1 Draft](D3312R1.md)
