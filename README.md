@@ -136,9 +136,9 @@ By tagging user-defined conversion functions with an implicit specifier the conv
 that its class inherited the unreferenced return type of the implicit user-defined conversion function. This is
 another way to formulate operator.().
 
-[P3183R0 Markdown](P3298-ImplicitConversionFunctions/Published/P3298.md)
+[P3183R0 Markdown](P3298-ImplicitConversionFunctions/Published/P3298R0.md)
 
-[P3183R0 PDF](P3298-ImplicitConversionFunctions/Published/P3298.pdf)
+[P3183R0 PDF](P3298-ImplicitConversionFunctions/Published/P3298R0.pdf)
 
 [D3183R1 Draft](D3298R1.md)
 
