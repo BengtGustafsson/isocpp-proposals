@@ -140,7 +140,13 @@ another way to formulate operator.().
 
 [P3298R0 PDF](P3298-ImplicitConversionFunctions/Published/P3298R0.pdf)
 
-[D3298R1 Draft](D3298R1.md)
+The changes in R1 are not that important, but a few more cases are covered, such as functions returning const types.
+
+[P3298R1 Markdown](P3298-ImplicitConversionFunctions/Published/P3298R1.md)
+
+[P3298R1 PDF](P3298-ImplicitConversionFunctions/Published/P3298R1.pdf)
+
+[D3298R2 Draft](D3298R2.md)
 
 ## P3312 Overload Set Types
 
@@ -152,3 +158,26 @@ when a placeholder type is deduced from the name of an overloaded function.
 [P3312R0 PDF](P3312-OverloadSetTypes/Published/P3312R0.pdf)
 
 [D3312R1 Draft](D3312R1.md)
+
+## P3398 User specified type decay
+
+This proposal allows specifying a type that a class decays to when a placeholder type or template parameter type is deduced from it.
+
+[P3398R0 Markdown](P3398-UserSpecifiedTypeDecay/Published/P3398R0.md)
+
+[P3398R0 PDF](P3398-UserSpecifiedTypeDecay/Published/P3398R0.pdf)
+
+[D3398R1 Draft](D3398R1.md)
+
+## P3412 String Interpolation
+
+This proposal allows specifying a type that a class decays to when a placeholder type or template parameter type is deduced from it.
+
+[P3412R0 Markdown](P3412-StringInterpolation/Published/P3412R0.md)
+
+[P3412R0 PDF](P3412-StringInterpolation/Published/P3412R0.pdf)
+
+[D3412R1 Draft](D3412R1.md)
+
+
+
