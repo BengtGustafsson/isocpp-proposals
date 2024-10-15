@@ -173,9 +173,9 @@ This proposal allows specifying a type that a class decays to when a placeholder
 
 This proposal allows specifying a type that a class decays to when a placeholder type or template parameter type is deduced from it.
 
-[P3412R0 Markdown](P3412-StringInterpolation/Published/P3412R0.md)
+[P3412R0 Markdown](P3412-StringInterpolation/published/P3412R0.md)
 
-[P3412R0 PDF](P3412-StringInterpolation/Published/P3412R0.pdf)
+[P3412R0 PDF](P3412-StringInterpolation/published/P3412R0.pdf)
 
 [D3412R1 Draft](D3412R1.md)
 
