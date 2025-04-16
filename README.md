@@ -157,7 +157,13 @@ when a placeholder type is deduced from the name of an overloaded function.
 
 [P3312R0 PDF](P3312-OverloadSetTypes/Published/P3312R0.pdf)
 
-[D3312R1 Draft](D3312R1.md)
+THe R1 revision got rid of thew ` back-tick option and was thereby simplified. Lots of clarifications and improvements to the paper.
+
+[P3312R1 Markdown](P3312-OverloadSetTypes/Published/P3312R1.md)
+
+[P3312R1 PDF](P3312-OverloadSetTypes/Published/P3312R1.pdf)
+
+[D3312R2 Draft](D3312R2.md)
 
 ## P3398 User specified type decay
 
@@ -177,7 +183,14 @@ This proposal allows specifying a type that a class decays to when a placeholder
 
 [P3412R0 PDF](P3412-StringInterpolation/published/P3412R0.pdf)
 
-[D3412R1 Draft](D3412R1.md)
+R1 of this paper removed the formatted_string type and thus reinstated the x"" and f"" literal separation. A __FORMAT__ function was introduced
+to insulate the core language (preprocessor) part from the library part.
+
+[P3412R1 Markdown](P3412-StringInterpolation/published/P3412R1.md)
+
+[P3412R1 PDF](P3412-StringInterpolation/published/P3412R1.pdf)
+
+[D3412R2 Draft](D3412R2.md)
 
 
 
